@@ -154,3 +154,7 @@ ACTION_METHOD(resetIntegers, @"Reset integer properties to defaults", YES) {
 }
 
 @end
+
+Class APLConfigurationClass() {
+    return [ExampleConfiguration class];
+}

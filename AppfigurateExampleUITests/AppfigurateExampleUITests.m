@@ -9,16 +9,13 @@
  * Appfigurate can be used to configure an iOS application undergoing UI testing.
  * To setup, you must perform the following in your UI Testing bundle:
  * 1. Link the AppfigurateLibrary static xcframework.
- * 2. Add APLConfigurationClass (of type String) with the name of your
- *    APLConfiguration subclass class name in Info.plist.
- *    e.g. `ExampleConfiguration`
- * 3. Tick on your APLConfiguration subclass in target membership.
- * 4. Ensure your APLConfiguration subclass allowInvalidSignatures method
+ * 2. Tick on your APLConfiguration subclass in target membership.
+ * 3. Ensure your APLConfiguration subclass allowInvalidSignatures method
  *    returns YES.
- * 5. Optionally add a UIInterruptionMonitor to automatically dismiss the
+ * 4. Optionally add a UIInterruptionMonitor to automatically dismiss the
  *    Appfigurate alert, when the configuration is applied.
- * 6. Get an instance of your APLConfiguration subclass and set properties.
- * 7. Apply the resulting configuration to XCUIApplication and launch.
+ * 5. Get an instance of your APLConfiguration subclass and set properties.
+ * 6. Apply the resulting configuration to XCUIApplication and launch.
  */
 
 @interface AppfigurateExampleUITests : XCTestCase {
