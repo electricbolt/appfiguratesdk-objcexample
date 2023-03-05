@@ -30,27 +30,29 @@
 
 // Implement resolution methods to provide additional information about your intent (optional).
 
-- (void)resolveRecipientsForSendMessage:(INSendMessageIntent *)intent withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults))completion {
-    NSLog(@"resolveRecipientsForSendMessage:withCompletion: boolean is %@", ((ExampleConfiguration*) [APLConfiguration sharedConfiguration]).boolean ? @"YES" : @"NO");
+// Implement resolution methods to provide additional information about your intent (optional).
+
+- (void)resolveRecipientsForSendMessage:(INSendMessageIntent *)intent completion:(void (^)(NSArray<INSendMessageRecipientResolutionResult *> *resolutionResults))completion {
+    NSLog(@"resolveRecipientsForSendMessage:with: boolean is %@", ((ExampleConfiguration*) [APLConfiguration sharedConfiguration]).boolean ? @"YES" : @"NO");
     NSArray<INPerson *> *recipients = intent.recipients;
     // If no recipients were provided we'll need to prompt for a value.
     if (recipients.count == 0) {
-        completion(@[[INPersonResolutionResult needsValue]]);
+        completion(@[[INSendMessageRecipientResolutionResult needsValue]]);
         return;
     }
-    NSMutableArray<INPersonResolutionResult *> *resolutionResults = [NSMutableArray array];
+    NSMutableArray<INSendMessageRecipientResolutionResult *> *resolutionResults = [NSMutableArray array];
     
     for (INPerson *recipient in recipients) {
         NSArray<INPerson *> *matchingContacts = @[recipient]; // Implement your contact matching logic here to create an array of matching contacts
         if (matchingContacts.count > 1) {
             // We need Siri's help to ask user to pick one from the matches.
-            [resolutionResults addObject:[INPersonResolutionResult disambiguationWithPeopleToDisambiguate:matchingContacts]];
+            [resolutionResults addObject:[INSendMessageRecipientResolutionResult disambiguationWithPeopleToDisambiguate:matchingContacts]];
         } else if (matchingContacts.count == 1) {
             // We have exactly one matching contact
-            [resolutionResults addObject:[INPersonResolutionResult successWithResolvedPerson:recipient]];
+            [resolutionResults addObject:[INSendMessageRecipientResolutionResult successWithResolvedPerson:recipient]];
         } else {
             // We have no contacts matching the description provided
-            [resolutionResults addObject:[INPersonResolutionResult unsupported]];
+            [resolutionResults addObject:[INSendMessageRecipientResolutionResult unsupported]];
         }
     }
     completion(resolutionResults);
