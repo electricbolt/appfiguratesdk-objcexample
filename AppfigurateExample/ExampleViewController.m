@@ -1,8 +1,9 @@
 // ExampleViewController.m
-// AppfigurateExample Copyright© 2013; Electric Bolt Limited.
+// RemoteConfigTest Copyright© 2023; Electric Bolt Limited.
 
 #import "ExampleViewController.h"
 #import "ExampleConfiguration.h"
+#import "AppDelegate.h"
 
 @interface ExampleViewController()<APLConfigurationUpdated>
 
@@ -11,8 +12,8 @@
 @implementation ExampleViewController
 
 - (void) viewDidLoad {
-    self.navigationItem.title = [NSString stringWithFormat: @"ObjC Example %@", APLVersion()];
     APLAddConfigurationUpdatedListener(self);
+    [self configurationUpdated: nil];
 
     APLConfigurationLabel* label = [[APLConfigurationLabel alloc] initWithFrame: CGRectZero];
     label.center = CGPointMake(7, self.navigationController.view.bounds.size.height / 2);
@@ -23,6 +24,7 @@
  * Called when the application configuration is applied from the Appfigurate application.
  */
 - (void) configurationUpdated:(NSNotification *)notification {
+    self.navigationItem.title = [NSString stringWithFormat: @"Remote Config %@", APLVersion()];
     [self.tableView reloadData];
 }
 
@@ -72,6 +74,13 @@
                 case 5: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.double_RegexTextfield_List]; break;
             }
             break;
+        case 5:
+            switch (indexPath.row) {
+                case 0: cell.detailTextLabel.text = c.alwaysDarkMode ? @"YES":@"NO"; break;
+                case 1: cell.detailTextLabel.text = c.appTitle; break;
+                case 2: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.fontSize]; break;
+                case 3: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) c.bookingDuration]; break;
+            }
     }
     return cell;
 }

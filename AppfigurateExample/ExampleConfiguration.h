@@ -1,10 +1,12 @@
 // ExampleConfiguration.h
-// AppfigurateExample Copyright© 2013; Electric Bolt Limited.
+// RemoteConfigTest Copyright© 2023; Electric Bolt Limited.
 
 @import Foundation;
-@import AppfigurateLibrary;
+#import "Appfigurate.h"
 
 @interface ExampleConfiguration : APLConfiguration
+
+// Local properties
 
 @property(nonatomic, assign) BOOL boolean;
 
@@ -36,5 +38,12 @@
 @property(nonatomic, assign) double double_List;
 @property(nonatomic, assign) double double_Textfield_List;
 @property(nonatomic, assign) double double_RegexTextfield_List;
+
+// Remote properties
+
+@property(nonatomic, assign) BOOL alwaysDarkMode;
+@property(nonatomic, strong) NSString* appTitle;
+@property(nonatomic, assign) double fontSize;
+@property(nonatomic, assign) NSInteger bookingDuration;
 
 @end

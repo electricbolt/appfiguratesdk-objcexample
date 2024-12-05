@@ -1,7 +1,7 @@
 // SceneDelegate.m
-// AppfigurateExample Copyright© 2020; Electric Bolt Limited.
+// RemoteConfigTest Copyright© 2023; Electric Bolt Limited.
 
-@import AppfigurateLibrary;
+#import "Appfigurate.h"
 #import "SceneDelegate.h"
 
 @implementation SceneDelegate

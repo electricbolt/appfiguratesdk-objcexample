@@ -2,12 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>APLKeychainAccessGroup</key>
-	<string>nz.co.electricbolt.appfigurateexample.shared</string>
-	<key>APLKeychainAccessibility</key>
-	<string>AlwaysThisDeviceOnly</string>
 	<key>APLLogging</key>
-	<false/>
+	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -29,11 +25,13 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>appfigurate.Example</string>
+			<string>appfigurate.RemoteConfigTest</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>example</string>
+				<string>remoteconfigtest</string>
 			</array>
 		</dict>
 	</array>

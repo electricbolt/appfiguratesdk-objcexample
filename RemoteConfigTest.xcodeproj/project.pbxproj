@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B6814E716C9C15500C379BC /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6814E516C9C15500C379BC /* ExampleViewController.m */; };
+		0B8CC9CE16BF2955008258CB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8CC9CD16BF2955008258CB /* Security.framework */; };
+		0BE8817116BF155D008E9937 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE8817016BF155D008E9937 /* UIKit.framework */; };
+		0BE8817316BF155D008E9937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE8817216BF155D008E9937 /* Foundation.framework */; };
+		0BE8817516BF155D008E9937 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE8817416BF155D008E9937 /* CoreGraphics.framework */; };
+		0BE8819916BF166E008E9937 /* ExampleConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8819816BF166E008E9937 /* ExampleConfiguration.m */; };
+		343911472CFC608A00E69F3A /* APLConfigurationLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3439111F2CFC608A00E69F3A /* APLConfigurationLabel.m */; };
+		343911482CFC608A00E69F3A /* APLConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3439111D2CFC608A00E69F3A /* APLConfiguration.m */; };
+		343911492CFC608A00E69F3A /* APLCrc32.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911212CFC608A00E69F3A /* APLCrc32.m */; };
+		3439114A2CFC608A00E69F3A /* APLPropertyWrapperIntrospection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343911292CFC608A00E69F3A /* APLPropertyWrapperIntrospection.swift */; };
+		3439114C2CFC608A00E69F3A /* PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343911422CFC608A00E69F3A /* PropertyWrapper.swift */; };
+		3439114D2CFC608A00E69F3A /* APLRSAPublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 3439112D2CFC608A00E69F3A /* APLRSAPublicKey.m */; };
+		3439114E2CFC608A00E69F3A /* APLStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911332CFC608A00E69F3A /* APLStartup.m */; };
+		3439114F2CFC608A00E69F3A /* APLSecureEnclave.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911312CFC608A00E69F3A /* APLSecureEnclave.m */; };
+		343911502CFC608A00E69F3A /* APLSafeBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3439112F2CFC608A00E69F3A /* APLSafeBase64.m */; };
+		343911512CFC608A00E69F3A /* APLValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911372CFC608A00E69F3A /* APLValet.m */; };
+		343911522CFC608A00E69F3A /* APLAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911182CFC608A00E69F3A /* APLAPI.m */; };
+		343911532CFC608A00E69F3A /* APLEncryptedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343911222CFC608A00E69F3A /* APLEncryptedString.swift */; };
+		343911542CFC608A00E69F3A /* APLWCSessionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3439113B2CFC608A00E69F3A /* APLWCSessionHelper.m */; };
+		343911552CFC608A00E69F3A /* APLUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911352CFC608A00E69F3A /* APLUtil.m */; };
+		343911562CFC608A00E69F3A /* APLAppIconLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3439111A2CFC608A00E69F3A /* APLAppIconLoader.m */; };
+		343911572CFC608A00E69F3A /* APLAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911152CFC608A00E69F3A /* APLAlert.m */; };
+		343911582CFC608A00E69F3A /* APLAutomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3439111C2CFC608A00E69F3A /* APLAutomation.m */; };
+		343911592CFC608A00E69F3A /* APLLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911252CFC608A00E69F3A /* APLLog.m */; };
+		3439115A2CFC608A00E69F3A /* APLMutableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911282CFC608A00E69F3A /* APLMutableData.m */; };
+		3439115B2CFC608A00E69F3A /* APLRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 3439112B2CFC608A00E69F3A /* APLRemote.m */; };
+		3439115C2CFC608A00E69F3A /* APLLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911242CFC608A00E69F3A /* APLLaunch.m */; };
+		3439115D2CFC608A00E69F3A /* APLAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343911172CFC608A00E69F3A /* APLAlertController.m */; };
+		4E6A7E472471E806004AD3E9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A7E462471E806004AD3E9 /* SceneDelegate.m */; };
+		4E76EDF624038BA30038DA8B /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E76EDF524038BA30038DA8B /* Empty.swift */; };
+		4EF14773224B00C000BDC421 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8817C16BF155D008E9937 /* main.m */; };
+		74081A861F5A918200D3024C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8818016BF155D008E9937 /* AppDelegate.m */; };
+		743907B81FE9EA8A007BC161 /* RemoteConfigTest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743907B71FE9EA8A007BC161 /* RemoteConfigTest.xcassets */; };
+		74437C951DDD5B71001A00C1 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74437C941DDD5B71001A00C1 /* Launch.storyboard */; };
+		74C5228D1DFF7FA200691FFB /* Example.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C5228C1DFF7FA200691FFB /* Example.storyboard */; };
+		C36B9F032A23325400C51690 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C36B9F022A23325400C51690 /* GoogleService-Info.plist */; };
+		C36B9F062A23335000C51690 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = C36B9F052A23335000C51690 /* FirebaseRemoteConfig */; };
+		C36B9F082A24049B00C51690 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C36B9F072A24049B00C51690 /* remote_config_defaults.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74D879A31E6CEE630017E90C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E4D68A1E0B1DD300A8C046 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B6814E416C9C15500C379BC /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		0B6814E516C9C15500C379BC /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		0B8CC9CD16BF2955008258CB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0B92D7A41717686200DAAFEC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		0BE8816D16BF155D008E9937 /* RemoteConfigTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteConfigTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE8817016BF155D008E9937 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0BE8817216BF155D008E9937 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0BE8817416BF155D008E9937 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0BE8817816BF155D008E9937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE8817C16BF155D008E9937 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BE8817F16BF155D008E9937 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0BE8818016BF155D008E9937 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0BE8819716BF166E008E9937 /* ExampleConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleConfiguration.h; sourceTree = "<group>"; };
+		0BE8819816BF166E008E9937 /* ExampleConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleConfiguration.m; sourceTree = "<group>"; };
+		343911142CFC608A00E69F3A /* APLAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLAlert.h; sourceTree = "<group>"; };
+		343911152CFC608A00E69F3A /* APLAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLAlert.m; sourceTree = "<group>"; };
+		343911162CFC608A00E69F3A /* APLAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLAlertController.h; sourceTree = "<group>"; };
+		343911172CFC608A00E69F3A /* APLAlertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLAlertController.m; sourceTree = "<group>"; };
+		343911182CFC608A00E69F3A /* APLAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLAPI.m; sourceTree = "<group>"; };
+		343911192CFC608A00E69F3A /* APLAppIconLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLAppIconLoader.h; sourceTree = "<group>"; };
+		3439111A2CFC608A00E69F3A /* APLAppIconLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLAppIconLoader.m; sourceTree = "<group>"; };
+		3439111B2CFC608A00E69F3A /* APLAutomation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLAutomation.h; sourceTree = "<group>"; };
+		3439111C2CFC608A00E69F3A /* APLAutomation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLAutomation.m; sourceTree = "<group>"; };
+		3439111D2CFC608A00E69F3A /* APLConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLConfiguration.m; sourceTree = "<group>"; };
+		3439111E2CFC608A00E69F3A /* APLConfiguration+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APLConfiguration+Private.h"; sourceTree = "<group>"; };
+		3439111F2CFC608A00E69F3A /* APLConfigurationLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLConfigurationLabel.m; sourceTree = "<group>"; };
+		343911202CFC608A00E69F3A /* APLCrc32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLCrc32.h; sourceTree = "<group>"; };
+		343911212CFC608A00E69F3A /* APLCrc32.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLCrc32.m; sourceTree = "<group>"; };
+		343911222CFC608A00E69F3A /* APLEncryptedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APLEncryptedString.swift; sourceTree = "<group>"; };
+		343911232CFC608A00E69F3A /* APLLaunch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLLaunch.h; sourceTree = "<group>"; };
+		343911242CFC608A00E69F3A /* APLLaunch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLLaunch.m; sourceTree = "<group>"; };
+		343911252CFC608A00E69F3A /* APLLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLLog.m; sourceTree = "<group>"; };
+		343911262CFC608A00E69F3A /* APLLog+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APLLog+Private.h"; sourceTree = "<group>"; };
+		343911272CFC608A00E69F3A /* APLMutableData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLMutableData.h; sourceTree = "<group>"; };
+		343911282CFC608A00E69F3A /* APLMutableData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLMutableData.m; sourceTree = "<group>"; };
+		343911292CFC608A00E69F3A /* APLPropertyWrapperIntrospection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APLPropertyWrapperIntrospection.swift; sourceTree = "<group>"; };
+		3439112A2CFC608A00E69F3A /* APLRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLRemote.h; sourceTree = "<group>"; };
+		3439112B2CFC608A00E69F3A /* APLRemote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLRemote.m; sourceTree = "<group>"; };
+		3439112C2CFC608A00E69F3A /* APLRSAPublicKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLRSAPublicKey.h; sourceTree = "<group>"; };
+		3439112D2CFC608A00E69F3A /* APLRSAPublicKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLRSAPublicKey.m; sourceTree = "<group>"; };
+		3439112E2CFC608A00E69F3A /* APLSafeBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLSafeBase64.h; sourceTree = "<group>"; };
+		3439112F2CFC608A00E69F3A /* APLSafeBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLSafeBase64.m; sourceTree = "<group>"; };
+		343911302CFC608A00E69F3A /* APLSecureEnclave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLSecureEnclave.h; sourceTree = "<group>"; };
+		343911312CFC608A00E69F3A /* APLSecureEnclave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLSecureEnclave.m; sourceTree = "<group>"; };
+		343911322CFC608A00E69F3A /* APLStartup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLStartup.h; sourceTree = "<group>"; };
+		343911332CFC608A00E69F3A /* APLStartup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLStartup.m; sourceTree = "<group>"; };
+		343911342CFC608A00E69F3A /* APLUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLUtil.h; sourceTree = "<group>"; };
+		343911352CFC608A00E69F3A /* APLUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLUtil.m; sourceTree = "<group>"; };
+		343911362CFC608A00E69F3A /* APLValet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLValet.h; sourceTree = "<group>"; };
+		343911372CFC608A00E69F3A /* APLValet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLValet.m; sourceTree = "<group>"; };
+		343911382CFC608A00E69F3A /* APLValet_Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLValet_Protected.h; sourceTree = "<group>"; };
+		343911392CFC608A00E69F3A /* APLValetDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLValetDefines.h; sourceTree = "<group>"; };
+		3439113A2CFC608A00E69F3A /* APLWCSessionHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLWCSessionHelper.h; sourceTree = "<group>"; };
+		3439113B2CFC608A00E69F3A /* APLWCSessionHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLWCSessionHelper.m; sourceTree = "<group>"; };
+		3439113C2CFC608A00E69F3A /* Appfigurate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appfigurate.h; sourceTree = "<group>"; };
+		3439113D2CFC608A00E69F3A /* Appfigurate+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Appfigurate+Private.h"; sourceTree = "<group>"; };
+		3439113E2CFC608A00E69F3A /* AppfigurateLibrary.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = AppfigurateLibrary.modulemap; sourceTree = "<group>"; };
+		3439113F2CFC608A00E69F3A /* AppfigurateLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppfigurateLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		343911422CFC608A00E69F3A /* PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapper.swift; sourceTree = "<group>"; };
+		4E6A7E452471E806004AD3E9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		4E6A7E462471E806004AD3E9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		4E76EDF524038BA30038DA8B /* Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		743907B71FE9EA8A007BC161 /* RemoteConfigTest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RemoteConfigTest.xcassets; sourceTree = "<group>"; };
+		74437C941DDD5B71001A00C1 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		74C5228C1DFF7FA200691FFB /* Example.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example.storyboard; sourceTree = "<group>"; };
+		C36B9F022A23325400C51690 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C36B9F072A24049B00C51690 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
+		C3BEB7AA2A248B6E002F0B65 /* RemoteConfigTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemoteConfigTest-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BE8816A16BF155D008E9937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE8817116BF155D008E9937 /* UIKit.framework in Frameworks */,
+				0BE8817316BF155D008E9937 /* Foundation.framework in Frameworks */,
+				C36B9F062A23335000C51690 /* FirebaseRemoteConfig in Frameworks */,
+				0BE8817516BF155D008E9937 /* CoreGraphics.framework in Frameworks */,
+				0B8CC9CE16BF2955008258CB /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BE8816416BF155D008E9937 = {
+			isa = PBXGroup;
+			children = (
+				0BE8817616BF155D008E9937 /* RemoteConfigTest */,
+				0BE8816F16BF155D008E9937 /* Frameworks */,
+				0BE8816E16BF155D008E9937 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BE8816E16BF155D008E9937 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8816D16BF155D008E9937 /* RemoteConfigTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BE8816F16BF155D008E9937 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B92D7A41717686200DAAFEC /* AdSupport.framework */,
+				0B8CC9CD16BF2955008258CB /* Security.framework */,
+				0BE8817016BF155D008E9937 /* UIKit.framework */,
+				0BE8817216BF155D008E9937 /* Foundation.framework */,
+				0BE8817416BF155D008E9937 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BE8817616BF155D008E9937 /* RemoteConfigTest */ = {
+			isa = PBXGroup;
+			children = (
+				343911442CFC608A00E69F3A /* AppfigurateLibrary */,
+				0BE8817716BF155D008E9937 /* Supporting Files */,
+				0BE8817F16BF155D008E9937 /* AppDelegate.h */,
+				0BE8818016BF155D008E9937 /* AppDelegate.m */,
+				74C5228C1DFF7FA200691FFB /* Example.storyboard */,
+				0B6814E416C9C15500C379BC /* ExampleViewController.h */,
+				0B6814E516C9C15500C379BC /* ExampleViewController.m */,
+				0BE8819716BF166E008E9937 /* ExampleConfiguration.h */,
+				0BE8819816BF166E008E9937 /* ExampleConfiguration.m */,
+				4E6A7E452471E806004AD3E9 /* SceneDelegate.h */,
+				4E6A7E462471E806004AD3E9 /* SceneDelegate.m */,
+				C3BEB7AA2A248B6E002F0B65 /* RemoteConfigTest-Bridging-Header.h */,
+			);
+			name = RemoteConfigTest;
+			path = AppfigurateExample;
+			sourceTree = "<group>";
+		};
+		0BE8817716BF155D008E9937 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E76EDF524038BA30038DA8B /* Empty.swift */,
+				0BE8817816BF155D008E9937 /* Info.plist */,
+				0BE8817C16BF155D008E9937 /* main.m */,
+				74437C941DDD5B71001A00C1 /* Launch.storyboard */,
+				C36B9F022A23325400C51690 /* GoogleService-Info.plist */,
+				C36B9F072A24049B00C51690 /* remote_config_defaults.plist */,
+				743907B71FE9EA8A007BC161 /* RemoteConfigTest.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		343911442CFC608A00E69F3A /* AppfigurateLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				343911142CFC608A00E69F3A /* APLAlert.h */,
+				343911152CFC608A00E69F3A /* APLAlert.m */,
+				343911162CFC608A00E69F3A /* APLAlertController.h */,
+				343911172CFC608A00E69F3A /* APLAlertController.m */,
+				343911182CFC608A00E69F3A /* APLAPI.m */,
+				343911192CFC608A00E69F3A /* APLAppIconLoader.h */,
+				3439111A2CFC608A00E69F3A /* APLAppIconLoader.m */,
+				3439111B2CFC608A00E69F3A /* APLAutomation.h */,
+				3439111C2CFC608A00E69F3A /* APLAutomation.m */,
+				3439111D2CFC608A00E69F3A /* APLConfiguration.m */,
+				3439111E2CFC608A00E69F3A /* APLConfiguration+Private.h */,
+				3439111F2CFC608A00E69F3A /* APLConfigurationLabel.m */,
+				343911202CFC608A00E69F3A /* APLCrc32.h */,
+				343911212CFC608A00E69F3A /* APLCrc32.m */,
+				343911222CFC608A00E69F3A /* APLEncryptedString.swift */,
+				343911232CFC608A00E69F3A /* APLLaunch.h */,
+				343911242CFC608A00E69F3A /* APLLaunch.m */,
+				343911252CFC608A00E69F3A /* APLLog.m */,
+				343911262CFC608A00E69F3A /* APLLog+Private.h */,
+				343911272CFC608A00E69F3A /* APLMutableData.h */,
+				343911282CFC608A00E69F3A /* APLMutableData.m */,
+				343911292CFC608A00E69F3A /* APLPropertyWrapperIntrospection.swift */,
+				3439112A2CFC608A00E69F3A /* APLRemote.h */,
+				3439112B2CFC608A00E69F3A /* APLRemote.m */,
+				3439112C2CFC608A00E69F3A /* APLRSAPublicKey.h */,
+				3439112D2CFC608A00E69F3A /* APLRSAPublicKey.m */,
+				3439112E2CFC608A00E69F3A /* APLSafeBase64.h */,
+				3439112F2CFC608A00E69F3A /* APLSafeBase64.m */,
+				343911302CFC608A00E69F3A /* APLSecureEnclave.h */,
+				343911312CFC608A00E69F3A /* APLSecureEnclave.m */,
+				343911322CFC608A00E69F3A /* APLStartup.h */,
+				343911332CFC608A00E69F3A /* APLStartup.m */,
+				343911342CFC608A00E69F3A /* APLUtil.h */,
+				343911352CFC608A00E69F3A /* APLUtil.m */,
+				343911362CFC608A00E69F3A /* APLValet.h */,
+				343911372CFC608A00E69F3A /* APLValet.m */,
+				343911382CFC608A00E69F3A /* APLValet_Protected.h */,
+				343911392CFC608A00E69F3A /* APLValetDefines.h */,
+				3439113A2CFC608A00E69F3A /* APLWCSessionHelper.h */,
+				3439113B2CFC608A00E69F3A /* APLWCSessionHelper.m */,
+				3439113C2CFC608A00E69F3A /* Appfigurate.h */,
+				3439113D2CFC608A00E69F3A /* Appfigurate+Private.h */,
+				3439113E2CFC608A00E69F3A /* AppfigurateLibrary.modulemap */,
+				3439113F2CFC608A00E69F3A /* AppfigurateLibrary-Prefix.pch */,
+				343911422CFC608A00E69F3A /* PropertyWrapper.swift */,
+			);
+			name = AppfigurateLibrary;
+			path = "../appfiguratelibrary-apple-remoteconfiguration/AppfigurateLibrary/AppfigurateLibrary";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BE8816C16BF155D008E9937 /* RemoteConfigTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE8818A16BF155D008E9937 /* Build configuration list for PBXNativeTarget "RemoteConfigTest" */;
+			buildPhases = (
+				0BE8816916BF155D008E9937 /* Sources */,
+				0BE8816A16BF155D008E9937 /* Frameworks */,
+				0BE8816B16BF155D008E9937 /* Resources */,
+				74E4D68A1E0B1DD300A8C046 /* Embed Watch Content */,
+				74D879A31E6CEE630017E90C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteConfigTest;
+			packageProductDependencies = (
+				C36B9F052A23335000C51690 /* FirebaseRemoteConfig */,
+			);
+			productName = AppfigurateExample;
+			productReference = 0BE8816D16BF155D008E9937 /* RemoteConfigTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BE8816516BF155D008E9937 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "Electric Bolt Limited";
+				TargetAttributes = {
+					0BE8816C16BF155D008E9937 = {
+						LastSwiftMigration = 1130;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 0BE8816816BF155D008E9937 /* Build configuration list for PBXProject "RemoteConfigTest" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BE8816416BF155D008E9937;
+			packageReferences = (
+				C36B9F042A23335000C51690 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 0BE8816E16BF155D008E9937 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BE8816C16BF155D008E9937 /* RemoteConfigTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BE8816B16BF155D008E9937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36B9F082A24049B00C51690 /* remote_config_defaults.plist in Resources */,
+				74C5228D1DFF7FA200691FFB /* Example.storyboard in Resources */,
+				C36B9F032A23325400C51690 /* GoogleService-Info.plist in Resources */,
+				743907B81FE9EA8A007BC161 /* RemoteConfigTest.xcassets in Resources */,
+				74437C951DDD5B71001A00C1 /* Launch.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BE8816916BF155D008E9937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74081A861F5A918200D3024C /* AppDelegate.m in Sources */,
+				4E6A7E472471E806004AD3E9 /* SceneDelegate.m in Sources */,
+				0BE8819916BF166E008E9937 /* ExampleConfiguration.m in Sources */,
+				4E76EDF624038BA30038DA8B /* Empty.swift in Sources */,
+				4EF14773224B00C000BDC421 /* main.m in Sources */,
+				0B6814E716C9C15500C379BC /* ExampleViewController.m in Sources */,
+				343911472CFC608A00E69F3A /* APLConfigurationLabel.m in Sources */,
+				343911482CFC608A00E69F3A /* APLConfiguration.m in Sources */,
+				343911492CFC608A00E69F3A /* APLCrc32.m in Sources */,
+				3439114A2CFC608A00E69F3A /* APLPropertyWrapperIntrospection.swift in Sources */,
+				3439114C2CFC608A00E69F3A /* PropertyWrapper.swift in Sources */,
+				3439114D2CFC608A00E69F3A /* APLRSAPublicKey.m in Sources */,
+				3439114E2CFC608A00E69F3A /* APLStartup.m in Sources */,
+				3439114F2CFC608A00E69F3A /* APLSecureEnclave.m in Sources */,
+				343911502CFC608A00E69F3A /* APLSafeBase64.m in Sources */,
+				343911512CFC608A00E69F3A /* APLValet.m in Sources */,
+				343911522CFC608A00E69F3A /* APLAPI.m in Sources */,
+				343911532CFC608A00E69F3A /* APLEncryptedString.swift in Sources */,
+				343911542CFC608A00E69F3A /* APLWCSessionHelper.m in Sources */,
+				343911552CFC608A00E69F3A /* APLUtil.m in Sources */,
+				343911562CFC608A00E69F3A /* APLAppIconLoader.m in Sources */,
+				343911572CFC608A00E69F3A /* APLAlert.m in Sources */,
+				343911582CFC608A00E69F3A /* APLAutomation.m in Sources */,
+				343911592CFC608A00E69F3A /* APLLog.m in Sources */,
+				3439115A2CFC608A00E69F3A /* APLMutableData.m in Sources */,
+				3439115B2CFC608A00E69F3A /* APLRemote.m in Sources */,
+				3439115C2CFC608A00E69F3A /* APLLaunch.m in Sources */,
+				3439115D2CFC608A00E69F3A /* APLAlertController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0BE8818816BF155D008E9937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		0BE8818916BF155D008E9937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		0BE8818B16BF155D008E9937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = RemoteConfigTestAppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3.1.0.1000;
+				DEVELOPMENT_TEAM = KLCLPVKM8C;
+				INFOPLIST_FILE = "$(SRCROOT)/AppfigurateExample/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RemoteConfigTest;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.electricbolt.RemoteConfigTest;
+				PRODUCT_NAME = RemoteConfigTest;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppfigurateExample/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0BE8818C16BF155D008E9937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = RemoteConfigTestAppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3.1.0.1000;
+				DEVELOPMENT_TEAM = KLCLPVKM8C;
+				INFOPLIST_FILE = "$(SRCROOT)/AppfigurateExample/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RemoteConfigTest;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.electricbolt.RemoteConfigTest;
+				PRODUCT_NAME = RemoteConfigTest;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppfigurateExample/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BE8816816BF155D008E9937 /* Build configuration list for PBXProject "RemoteConfigTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE8818816BF155D008E9937 /* Debug */,
+				0BE8818916BF155D008E9937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BE8818A16BF155D008E9937 /* Build configuration list for PBXNativeTarget "RemoteConfigTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE8818B16BF155D008E9937 /* Debug */,
+				0BE8818C16BF155D008E9937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C36B9F042A23335000C51690 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C36B9F052A23335000C51690 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C36B9F042A23335000C51690 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0BE8816516BF155D008E9937 /* Project object */;
+}
