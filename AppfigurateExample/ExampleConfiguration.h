@@ -4,7 +4,11 @@
 @import Foundation;
 @import AppfigurateLibrary;
 
+#define CONFIGURATION ((ExampleConfiguration*) [APLConfiguration sharedConfiguration])
+
 @interface ExampleConfiguration : APLConfiguration
+
+// Local properties
 
 @property(nonatomic, assign) BOOL boolean;
 
@@ -36,5 +40,12 @@
 @property(nonatomic, assign) double double_List;
 @property(nonatomic, assign) double double_Textfield_List;
 @property(nonatomic, assign) double double_RegexTextfield_List;
+
+// Remote properties
+
+@property(nonatomic, assign) BOOL alwaysDarkMode;
+@property(nonatomic, strong) NSString* appTitle;
+@property(nonatomic, assign) double fontSize;
+@property(nonatomic, assign) NSInteger bookingDuration;
 
 @end

@@ -27,51 +27,57 @@
 }
 
 - (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ExampleConfiguration *c = ((ExampleConfiguration*) [APLConfiguration sharedConfiguration]);
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
     switch (indexPath.section) {
-        case 0: cell.detailTextLabel.text = c.boolean ? @"YES":@"NO"; break;
+        case 0: cell.detailTextLabel.text = CONFIGURATION.boolean ? @"YES":@"NO"; break;
         case 1:
             switch (indexPath.row) {
-                case 0: cell.detailTextLabel.text = c.string_Textfield; break;
-                case 1: cell.detailTextLabel.text = c.string_RegexTextfield; break;
-                case 2: cell.detailTextLabel.text = c.string_List; break;
-                case 3: cell.detailTextLabel.text = c.string_Textfield_List; break;
-                case 4: cell.detailTextLabel.text = c.string_RegexTextfield_List; break;
-                case 5: cell.detailTextLabel.text = c.encrypted_string_Textfield_List; break;
-                case 6: cell.detailTextLabel.text = c.encrypted_string_RegexTextfield_List; break;
+                case 0: cell.detailTextLabel.text = CONFIGURATION.string_Textfield; break;
+                case 1: cell.detailTextLabel.text = CONFIGURATION.string_RegexTextfield; break;
+                case 2: cell.detailTextLabel.text = CONFIGURATION.string_List; break;
+                case 3: cell.detailTextLabel.text = CONFIGURATION.string_Textfield_List; break;
+                case 4: cell.detailTextLabel.text = CONFIGURATION.string_RegexTextfield_List; break;
+                case 5: cell.detailTextLabel.text = CONFIGURATION.encrypted_string_Textfield_List; break;
+                case 6: cell.detailTextLabel.text = CONFIGURATION.encrypted_string_RegexTextfield_List; break;
             }
             break;
         case 2:
             switch (indexPath.row) {
-                case 0: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) c.integer_Slider]; break;
-                case 1: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) c.integer_Textfield]; break;
-                case 2: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) c.integer_RegexTextfield]; break;
-                case 3: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) c.integer_List]; break;
-                case 4: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) c.integer_Textfield_List]; break;
-                case 5: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) c.integer_RegexTextfield_List]; break;
+                case 0: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) CONFIGURATION.integer_Slider]; break;
+                case 1: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) CONFIGURATION.integer_Textfield]; break;
+                case 2: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) CONFIGURATION.integer_RegexTextfield]; break;
+                case 3: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) CONFIGURATION.integer_List]; break;
+                case 4: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) CONFIGURATION.integer_Textfield_List]; break;
+                case 5: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) CONFIGURATION.integer_RegexTextfield_List]; break;
             }
             break;
         case 3:
             switch (indexPath.row) {
-                case 0: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.float_Slider]; break;
-                case 1: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.float_Textfield]; break;
-                case 2: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.float_RegexTextfield]; break;
-                case 3: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.float_List]; break;
-                case 4: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.float_Textfield_List]; break;
-                case 5: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.float_RegexTextfield_List]; break;
+                case 0: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.float_Slider]; break;
+                case 1: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.float_Textfield]; break;
+                case 2: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.float_RegexTextfield]; break;
+                case 3: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.float_List]; break;
+                case 4: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.float_Textfield_List]; break;
+                case 5: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.float_RegexTextfield_List]; break;
             }
             break;
         case 4:
             switch (indexPath.row) {
-                case 0: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.double_Slider]; break;
-                case 1: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.double_Textfield]; break;
-                case 2: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.double_RegexTextfield]; break;
-                case 3: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.double_List]; break;
-                case 4: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.double_Textfield_List]; break;
-                case 5: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", c.double_RegexTextfield_List]; break;
+                case 0: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.double_Slider]; break;
+                case 1: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.double_Textfield]; break;
+                case 2: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.double_RegexTextfield]; break;
+                case 3: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.double_List]; break;
+                case 4: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.double_Textfield_List]; break;
+                case 5: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.double_RegexTextfield_List]; break;
             }
             break;
+        case 5:
+            switch (indexPath.row) {
+                case 0: cell.detailTextLabel.text = CONFIGURATION.alwaysDarkMode ? @"YES": @"NO"; break;
+                case 1: cell.detailTextLabel.text = CONFIGURATION.appTitle; break;
+                case 2: cell.detailTextLabel.text = [NSString stringWithFormat: @"%0.3f", CONFIGURATION.fontSize]; break;
+                case 3: cell.detailTextLabel.text = [NSString stringWithFormat: @"%ld", (long) CONFIGURATION.bookingDuration]; break;
+            }
     }
     return cell;
 }
